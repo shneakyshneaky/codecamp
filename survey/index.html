@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>freeCodeCamp project: Survey Form</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<div class="banner">
+<h1 id="title">Survey Form</h1>
+<p id="description">Please fill out this form, because I said so.</p>
+</div>
+
+<div class="form-container">
+<form id="survey-form">
+  <label id="name-label" for="name"><h2>Full Name</h2></label>
+  <input id="name" type="text" name="name" placeholder="Enter your name" required>
+  
+  <label id="email-label" for="email"><h2>Email</h2></label>
+  <input id="email" type="email" name="email" placeholder="Enter your email" required>
+  
+  <label id="number-label" for="number"><h2>Enter a number between 1 and 100</h2></label>
+  <input id="number" type="number" name="number" placeholder="XXX" min="1" max="100">
+  
+  <label for="dropdown"><h2>Choose your favorite animal</h2></label>
+  <select id="dropdown" name="dropdown">
+    <option value="cat">Cat</option>
+    <option value="dog">Dog</option>
+    <option value="sloth">Sloth</option>
+    <option value="tarantula">Tarantula</option>
+  </select>
+  
+  <h2>What type of person are you?</h2>
+  <label for="radios">
+  <input id="morning" type="radio" name="radios" value="morning">
+    Morning
+  </label>
+  <label for="radios">
+    <input id="night" type="radio" name="radios" value="night">
+    Night Owl
+  </label>
+  
+  <h2>Select your favorite foods</h2>
+  <label for="checkboxes">
+    <input id="pizza" type="checkbox" name="checkboxes" value="pizza">
+    Pizza
+  </label>
+  <label for="checkboxes">
+    <input id="icecream" type="checkbox" name="checkboxes" value="icecream">
+    Icecream
+  </label>
+  <label for="checkboxes">
+    <input id="Spaghetti" type="checkbox" name="checkboxes" value="Spaghetti">
+    Spaghetti
+  </label>
+  <label for="checkboxes">
+    <input id="Ramen" type="checkbox" name="checkboxes" value="Ramen">
+    Ramen
+  </label>
+  
+  <h2>Enter any comments you have for this survey</h2>
+  <textarea name="comments">
+  </textarea>
+  
+  <button id="submit" type="submit">
+    Submit
+  </button>
+</form>
+</div>
+  
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
