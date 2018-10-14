@@ -36,20 +36,52 @@ h2 {
   padding: 0;
 }
 
-form {
+.form-grid {
   display: grid;
-  grid-template-columns: auto 2fr;
-  grid-gap: 1em;
-}
-
-label {
-  
+  grid-template-columns: 1.2fr 2fr;
+  grid-gap: 2.5em;
 }
 
 input {
-  
+  border: 1px solid #fff;
+  padding: 1em;
+  color: #000;
+  border-radius: 5px;
 }
 
-button {
-  
+::-webkit-input-placeholder {
+   color: rgba(0,0,0,.5);
+   font-size: .7rem;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: rgba(0,0,0,.5);
+  font-size: .7rem;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: rgba(0,0,0,.5);
+  font-size: .7rem;
+}
+
+:-ms-input-placeholder {
+   color: rgba(0,0,0,.5);
+  font-size: .7rem;
+}
+
+input:focus {
+  outline-style: none;
+  box-shadow: 0 0 0 3px #C9EDFF;
+}
+
+select {
+  border: 1px solid #fff;
+  padding: 1em;
+  color: #000;
+  border: 0;
+}
+
+.button {
+  text-align: center;
+  margin: 4em auto 0;
 }
