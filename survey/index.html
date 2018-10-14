@@ -1,20 +1,4 @@
-<!DOCTYPE html>
-<html lang="en" >
-
-<head>
-  <meta charset="UTF-8">
-  <title>freeCodeCamp project: Survey Form</title>
-  
-  
-  
-      <link rel="stylesheet" href="css/style.css">
-
-  
-</head>
-
-<body>
-
-  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
 <div class="banner">
 <h1 id="title">Survey Form</h1>
@@ -22,16 +6,23 @@
 </div>
 
 <div class="form-container">
+
 <form id="survey-form">
+  <div class="form-grid">
+
+  <div class="label-name">
   <label id="name-label" for="name"><h2>Full Name</h2></label>
+  </div>
+  <div class="input-name">
   <input id="name" type="text" name="name" placeholder="Enter your name" required>
-  
+  </div>
+
   <label id="email-label" for="email"><h2>Email</h2></label>
   <input id="email" type="email" name="email" placeholder="Enter your email" required>
-  
+
   <label id="number-label" for="number"><h2>Enter a number between 1 and 100</h2></label>
-  <input id="number" type="number" name="number" placeholder="XXX" min="1" max="100">
-  
+  <input id="number" type="number" name="number" placeholder="Enter your number" min="1" max="100">
+
   <label for="dropdown"><h2>Choose your favorite animal</h2></label>
   <select id="dropdown" name="dropdown">
     <option value="cat">Cat</option>
@@ -39,8 +30,9 @@
     <option value="sloth">Sloth</option>
     <option value="tarantula">Tarantula</option>
   </select>
-  
+
   <h2>What type of person are you?</h2>
+  <div class="radio-container">
   <label for="radios">
   <input id="morning" type="radio" name="radios" value="morning">
     Morning
@@ -49,8 +41,10 @@
     <input id="night" type="radio" name="radios" value="night">
     Night Owl
   </label>
-  
+    </div>
+
   <h2>Select your favorite foods</h2>
+  <div class="checkbox-container">
   <label for="checkboxes">
     <input id="pizza" type="checkbox" name="checkboxes" value="pizza">
     Pizza
@@ -67,24 +61,19 @@
     <input id="Ramen" type="checkbox" name="checkboxes" value="Ramen">
     Ramen
   </label>
-  
+  </div>
+
   <h2>Enter any comments you have for this survey</h2>
   <textarea name="comments">
   </textarea>
-  
+
+  </div>
+
+  <div class="button">
   <button id="submit" type="submit">
     Submit
   </button>
+  </div>
+
 </form>
 </div>
-  
-  
-
-    <script  src="js/index.js"></script>
-
-
-
-
-</body>
-
-</html>
