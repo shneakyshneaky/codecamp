@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  top: 0;
+  position: fixed;
+  background: #fff;
+  width: 100%;
+}
+
+nav li {
+  list-style: none;
+}
+
+#welcome-section {
+  min-height: 50vh;
+  background: #eee;
+  padding-top: 50vh;
+}
+
+@media (max-width: 460px) {
+  nav {
+    display: none;
+  }
+}
