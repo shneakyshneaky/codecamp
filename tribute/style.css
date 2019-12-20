@@ -23,17 +23,17 @@ body {
       "banner"
       "content";
   }
-
+  
    #title {
      margin: 2em auto;
      text-align: center;
    }
-
+   
    #img-caption {
      margin: 1em auto;
      text-align: center;
    }
-
+   
 }
 
 #title {
@@ -54,7 +54,7 @@ h1 {
   display: block;
   height: auto;
 }
-
+  
 img {
   max-width: 100%;
   display: block;

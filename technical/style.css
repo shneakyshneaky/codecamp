@@ -1,0 +1,124 @@
+#split-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  height: 100%;
+}
+
+#navbar {
+  position: sticky;
+  background: white;
+  height: auto;
+  width: 20%;
+  align-self: flex-start;
+  top: 0;
+}
+
+#main-doc {
+  width: 80%;
+}
+
+code {
+  background: #eee;
+  padding: 10px;
+  font-family: system-ui;
+  font-size: .8rem;
+  
+}
+
+ul {
+  padding-inline-start: 10px;
+  margin-inline-start: 10px;
+}
+
+.every-two-rows {
+  padding-inline-start: 0px;
+  margin-inline-start: 0px;
+  list-style-type: none;
+}
+
+.every-two-rows li:before {
+  content: "•";
+  color: black;
+  padding-right: 10px;
+}
+
+.every-two-rows li {
+  padding: 10px 5px;
+}
+
+.every-two-rows li:nth-child(2n) {
+  color: white;
+  background: grey;
+  padding: 10px 5px;
+}
+
+.odd-rows {
+  background: #eee;
+  padding: 20px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.odd-rows th {
+  border-bottom: 1px solid;
+  text-align: left;
+  padding: 5px;
+}
+
+.odd-rows th, td {
+  width: 33.33%;
+  word-break: break-all;
+}
+
+.odd-rows tr{
+  display: table;
+  width: 100%;
+  box-sizing: border-box; /* chrome needs it */
+}
+
+.odd-rows tbody {
+  display: block; /* enables vertical scrolling */
+  max-height: 200px;
+  overflow-y: scroll;
+}
+
+.odd-rows td {
+  padding: 10px 5px;
+  margin: 0px;
+}
+
+.odd-rows tbody tr:nth-child(2n+1) {
+  background: white;
+}
+
+.range-rows-3 div:nth-child(n+3) {
+  background: red;
+}
+
+.range-rows-5 div:nth-child(-n+5) {
+  background: red;
+}
+
+.range-rows-spec-even div:nth-child(n+2):nth-child(even):nth-child(-n+6) {
+  background: red;
+}
+
+.range-rows-spec div:nth-child(n+2):nth-child(-n+6) {
+  background: red;
+}
+
+.child-types div:nth-of-type(2n+1) {
+  background: red;
+}
+
+.child-types span:nth-of-type(2n) {
+  background: blue;
+}
+
+@media (max-width: 768px) {
+  #navbar {
+    position: relative;
+    width: 100%;
+  }
+}

@@ -55,17 +55,17 @@ input {
 }
 
 :-moz-placeholder { /* Firefox 18- */
-   color: rgba(0,0,0,.5);
+   color: rgba(0,0,0,.5);  
   font-size: .7rem;
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-   color: rgba(0,0,0,.5);
+   color: rgba(0,0,0,.5);  
   font-size: .7rem;
 }
 
-:-ms-input-placeholder {
-   color: rgba(0,0,0,.5);
+:-ms-input-placeholder {  
+   color: rgba(0,0,0,.5);  
   font-size: .7rem;
 }
 
